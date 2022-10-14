@@ -1,0 +1,17 @@
+$footer-color:#F8F4F9;
+$font-color: #000000;
+
+.container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: $font-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+    background: $footer-color 0% 0% no-repeat padding-box;
+    border: 1px solid #1F343E;
+    opacity: 1;
+  }
