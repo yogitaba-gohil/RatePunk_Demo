@@ -10,8 +10,8 @@ const EmailForm = () => {
           REFER FRIENDS AND GET REWARDS
         </div>
         <div className={styles.textContainer}>
-          Refer your friends to us and earn hotel booking vouchers. We will give
-          you 1 coin for each friend that installs our extension. Minimum
+          Refer your friends to us and earn hotel <br /> booking vouchers. We will give
+          you 1 coin for <br /> each friend that installs our extension. <br /> Minimum
           cash-out at 20 coins.
         </div>
         <div className={styles.inputContainer}>

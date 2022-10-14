@@ -4,10 +4,14 @@
   padding: 4rem 0;
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #F8CC5D;
-  height: 70vh;
 }
-
+.emailContainer{
+  margin: 20px;
+}
+.instContainer{
+  margin: 20px;
+}

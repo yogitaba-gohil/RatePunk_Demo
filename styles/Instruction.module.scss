@@ -1,0 +1,24 @@
+$on-hover: #4EB3E3;
+$font-color: #1F343E;
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container h5{
+    color: $on-hover;
+    margin-bottom: -13px;
+}
+.container h4{
+    font-family: cursive;
+    color: $font-color;
+    margin-bottom: -5px;
+}
+.container p{
+    color: $font-color;
+    font-size: 12px;
+}
+.coinsDiv{
+    margin-left: 25px;
+}
