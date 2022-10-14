@@ -1,18 +1,31 @@
-import React from 'react'
-import styles from '../../styles/EmailForm.module.scss'
-
+import React from "react";
+import styles from "../../styles/EmailForm.module.scss";
 
 const EmailForm = () => {
   return (
     <div className={styles.container}>
-    <form>
-     <div className={styles.titleContainer}> REFER FRIENDS AND GET REWARDS</div>
-     <div>Refer your friends to us and earn hotel booking vouchers. We will give you 1 coin for each friend that installs our extension. Minimum cash-out at 20 coins.</div>
-    <input />
-    <button>Get Referral Link</button>
-    </form>
+      <form>
+        <div className={styles.titleContainer}>
+          
+          REFER FRIENDS AND GET REWARDS
+        </div>
+        <div className={styles.textContainer}>
+          Refer your friends to us and earn hotel booking vouchers. We will give
+          you 1 coin for each friend that installs our extension. Minimum
+          cash-out at 20 coins.
+        </div>
+        <div className={styles.inputContainer}>
+          <div>
+          <input  placeholder="Enter your email address" type="text" />
+          </div>
+        
+          <button>Get Referral Link</button>
+        
+        </div>
+      </form>
+      <div className={styles.noteContainer}>Limits on max rewards apply.</div>
     </div>
-  )
-}
+  );
+};
 
-export default EmailForm
+export default EmailForm;

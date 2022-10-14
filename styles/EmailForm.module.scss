@@ -1,10 +1,11 @@
+$button_color: #4EB3E3;
+$border: #1F343E;
 
 .container{
 top: 144px;
 left: 400px;
-width: 544px;
-height: 797px;
-/* UI Properties */
+width: 323px;
+height: 700px;
 background: #F8F4F9 0% 0% no-repeat padding-box;
 border: 1px solid #1F343E;
 border-radius: 16px;
@@ -12,5 +13,45 @@ opacity: 1;
 color: #1F343E;
 }
 .titleContainer{
-    
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 700;
+    margin: 30px;
 }
+.textContainer{
+    font-size: 12px;
+    margin: 30px;
+}
+.inputContainer{
+   text-align: start;
+   margin: 30px;
+}
+.inputContainer input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: url(/assets/email.svg) no-repeat scroll 6px;
+    text-align: center;
+}
+.inputContainer button{
+    width: 259px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 0.45em;
+    font-family: unset;
+    background: $button_color;
+    border: 1px solid $border;
+    margin: 8px 0;
+    color: #F8F4F9;
+    font-weight: 600;
+}
+.noteContainer{
+    margin: 30px;
+    font-size: 10px;
+
+}
+
