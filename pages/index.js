@@ -3,6 +3,7 @@ import Footer from '../component/Footer'
 import Header from '../component/Header'
 import EmailForm from '../component/EmailForm'
 import Instruction from '../component/Instruction'
+import ReviewSection from '../component/ReviewSection'
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
 
       <Instruction />
       </div>
+    </div>
+    <div>
+      <ReviewSection />
     </div>
     <Footer />
    </>
