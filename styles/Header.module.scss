@@ -15,6 +15,7 @@ $on-hover: #4EB3E3;
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 .menuItem{
     display: flex;
@@ -29,3 +30,28 @@ $on-hover: #4EB3E3;
 .menuItem div:hover{
     color: $on-hover;
 }
+.menuContainer button{
+    border: none;
+    background-color: transparent;
+}
+.menuContainer{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .menuItem{
+      display: none;
+    }
+    .menuContainer{
+      display: block;
+    }
+    .logoContainer{
+        justify-content: space-between;
+    }
+    
+  }
+  @media only screen and (min-width: 1200px) {
+    .menuContainer button{
+        display: none;
+    }
+
+  }

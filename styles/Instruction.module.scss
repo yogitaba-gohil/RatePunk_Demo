@@ -22,3 +22,10 @@ $font-color: #1F343E;
 .coinsDiv{
     margin-left: 25px;
 }
+@media only screen and (max-width: 600px) {
+    .container{
+        display: block;
+        text-align: center;
+    }
+    
+}

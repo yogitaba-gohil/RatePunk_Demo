@@ -8,8 +8,8 @@ const Instruction = () => {
    <>
   
         <div className={styles.container}>
-            <div>
-                <Image alt='mail image' src="/assets/invite.svg" width="128px" height="80px"/>
+            <div className={styles.imgContainer} >
+                <Image alt='mail image' src="/assets/invite.svg" width="150px" height="90px" />
             </div>
             <div>
                 <h5>Step 1</h5>
