@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import styles from "../../styles/EmailForm.module.scss";
 import Image from 'next/dist/client/image'
+import handler from '../../pages/api/hello';
 
 
 const EmailForm = () => {
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState('');
   const [error,setError] = useState('');
   const [success, setSuccess] =useState();
 
@@ -13,8 +14,8 @@ const EmailForm = () => {
   }
 
   const handleInputChange = (e)=>{
-   setMessage(e.target.value);
-   if (message.trim().length !== 0 && isValidEmail(message)) {
+   setEmail(e.target.value);
+   if (email.trim().length !== 0 && isValidEmail(email)) {
     setError('');
 
   } else {
@@ -24,6 +25,7 @@ const EmailForm = () => {
   const handleClick = event => {
     event.preventDefault();
     setSuccess(error ? false : true);
+    handler(email);
   };
   return (
     <div className={styles.container}>
