@@ -1,7 +1,30 @@
-import React from "react";
+import React, {useState} from 'react';
 import styles from "../../styles/EmailForm.module.scss";
+import Image from 'next/dist/client/image'
+
 
 const EmailForm = () => {
+  const [message, setMessage] = useState('');
+  const [error,setError] = useState('');
+  const [success, setSuccess] =useState();
+
+  const isValidEmail = (email) => {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+
+  const handleInputChange = (e)=>{
+   setMessage(e.target.value);
+   if (message.trim().length !== 0 && isValidEmail(message)) {
+    setError('');
+
+  } else {
+    setError('error state')
+  }
+  }
+  const handleClick = event => {
+    event.preventDefault();
+    setSuccess(error ? false : true);
+  };
   return (
     <div className={styles.container}>
       <form>
@@ -16,10 +39,12 @@ const EmailForm = () => {
         </div>
         <div className={styles.inputContainer}>
           <div>
-          <input  placeholder="Enter your email address" type="text" />
+            { error ? <span style={{color:'red'}}>{error}</span> : null}
+            {success ? <div className={styles.successDiv}><Image src='/assets/success.svg' alt='success image' width={20} height={15} /><span>Your email is confirmed!</span></div> : null}
+          <input  placeholder="Enter your email address"  type="email" onChange={(e) => handleInputChange(e)}/>
           </div>
         
-          <button>Get Referral Link</button>
+          <button onClick={handleClick}>Get Referral Link</button>
         
         </div>
       </form>

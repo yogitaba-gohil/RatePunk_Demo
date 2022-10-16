@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from '../../styles/ReviewSection.module.scss'
-import { RiStarLine } from "react-icons/ri";
 
 
 
@@ -9,8 +8,8 @@ const ReviewSection = () => {
   return (
     <div className={styles.container}>
        <div className={styles.boxSection}>
-        <div>
-        <Image src="/assets/chrome.svg" alt='chrome img'width="60px" height="30px" />
+        <div className={styles.imgContainer}>
+        <Image src="/assets/chrome.svg" alt='chrome img' width={100} height={50} />
         </div>
         <div>
         <div className={styles.smallFont}>available in the</div> 
@@ -19,8 +18,8 @@ const ReviewSection = () => {
         
        </div>
        <div className={styles.boxSection}>
-        <div>
-        <Image src="/assets/apple.svg" alt='chrome img' width="60px" height="30px" />
+        <div className={styles.imgContainer}>
+        <Image src="/assets/apple.svg" alt='chrome img' width={100} height={50} />
         </div>
         <div>
         <div className={styles.smallFont}>available in the</div> 

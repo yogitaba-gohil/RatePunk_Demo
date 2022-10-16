@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/dist/client/image'
 import styles from '../../styles/Header.module.scss'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -8,9 +9,10 @@ const Header = () => {
     <div className={styles.logoContainer}><Image alt='logo image'  src="/assets/logo.svg" width="200px" height="100px" />
     </div>
     <div className={styles.menuItem}>
-      <div>Chrome Extension</div>
-      <div>Price Comparison</div>
-      <div>Blog</div>
+    
+      <div><Link href="/">Chrome Extension</Link></div>
+      <div><Link href="/">Price Comparison </Link></div>
+      <div><Link href="/">Blog </Link></div>
     </div>
     <div className={styles.menuContainer}>
       <button>

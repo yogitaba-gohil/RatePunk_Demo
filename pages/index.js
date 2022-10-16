@@ -19,9 +19,9 @@ export default function Home() {
       <Instruction />
       </div>
     </div>
-    <div>
+   
       <ReviewSection />
-    </div>
+    
     <Footer />
    </>
   )

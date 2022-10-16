@@ -34,6 +34,7 @@ $on-hover: #4EB3E3;
   margin-bottom: 30px;
 }
   .textDiv{
+    
     font-size: 10px;
     margin-left: 38%;
     text-align: left;
@@ -56,14 +57,59 @@ $on-hover: #4EB3E3;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-size: 10px;
+  font-size: 12px;
 }
-.mailContainer Image{
+.mailContainer div{
   margin-right: 10px;
 }
-.socialMediaContainer h4{
+.socialMediaContainer h3{
 text-align: start;
+margin-top: 29px;
 }
 .contactContainer{
   text-align: start;
+}
+.mobileView{
+  display: none;
+}
+.bigScreen{
+  display: block;
+
+}
+@media only screen and (max-width: 600px) {
+  .container{
+    display: block;
+  }
+  .itemContainer{
+  text-align: start;
+  }
+  .textDiv{
+    text-align: start;
+    margin-left: 0px;
+    font-size: 16px;
+  }
+  .itemContainer h3{
+    font-size: 19px;
+    margin-top: 14px;
+  }
+  .itemContainer li{
+    font-size: 15px;
+  }
+  .mailContainer{
+    font-size: 20px;
+
+  }
+  .mailContainer div{
+    margin-right: 13px;
+  }
+  .bigScreen{
+    display: none;
+  }
+  .mobileView{
+    display: block;
+  }
+  .iconContainer{
+    margin-bottom: 19px;
+  }
+
 }

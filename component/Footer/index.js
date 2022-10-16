@@ -22,10 +22,14 @@ const Footer = () => {
             confident in knowing you’re getting the best deal!
           
         </div>
-        <div className={styles.textDiv}>
+<div className={styles.bigScreen}>
+<div className={styles.textDiv}>
         © 2021 Ratepunk. All Rights Reserved.
 
         </div>
+  
+</div>
+        
         
       </div>
       <div className={styles.itemContainer}>
@@ -41,16 +45,18 @@ const Footer = () => {
         <div className={styles.contactContainer}>
         <h3>Contact</h3>
         <div className={styles.mailContainer}>
+          <div>
+
         <Image alt="social media icon" src='/assets/email.svg' width="25px"
-            height="10px"/>
+            height="15px"/>
+          </div>
         <span>hi@ratepunk.com</span>
         </div>
         </div>
         
-        
        <div className={styles.socialMediaContainer}>
 
-        <h4>SOCIAL</h4>
+        <h3>SOCIAL</h3>
         <div className={styles.iconContainer}>
           <div className={styles.iconDiv}>
 
@@ -82,6 +88,10 @@ const Footer = () => {
 
         </div>
        </div>
+       <div className={styles.mobileView}>
+        © 2021 Ratepunk. All Rights Reserved.
+
+        </div>
       </div>
     </div>
   );
